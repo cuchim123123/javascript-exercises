@@ -5,10 +5,8 @@ const sumAll = function(int1, int2) {
     if(!Number.isInteger(int1)|| !Number.isInteger(int2) || int1<0 || int2<0){
         return "ERROR";
     }
-    for(let i = smaller; i <= larger; i++){
-        sum+=i;
-    }
-    return sum;
+    
+    return (smaller + larger) * (larger - smaller + 1)/2;
 };
 
 // Do not edit below this line
